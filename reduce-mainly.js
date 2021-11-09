@@ -1,3 +1,5 @@
+//ideas - json object fun
+
 const transformVideoData = (videos) => {
   return videos.screens.reduce((all, screen) => {
     if (screen.type === "Selector") {
