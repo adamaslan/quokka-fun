@@ -24,3 +24,5 @@ else {
     return -1;
 }
 binarySearch([2,6,7,90,103], 90);
+
+console.log(binarySearch([2,6,7,90,103], 90));
