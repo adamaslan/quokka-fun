@@ -6,7 +6,7 @@ console.log(a);
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
 const array1 = [1, 2, 3, 4];
-const reducer = (previousValue, currentValue) => previousValue + currentValue;
+const reducer = (previousValue, currentValue) => previousValue + currentValue : currentValue > 2 ;
 
 // 1 + 2 + 3 + 4
 console.log(array1.reduce(reducer));
