@@ -1,14 +1,63 @@
 const a = [2, 3, 4];
-let red = a.map((x) => x + 1);
-console.log(red);
+let blue2 = a.reduce((x, y) =>{
+  //[x + y)
+  console.log(x)
+//return x + y
+if (y >= 3){
+   x.push(y);
+  
+ // prev.result.push(next); into prev push next into x push y  -x the thing y the item going into it 
+   return x;
+}
+  return x;}
+},[]);
 
-let blue = a.reduce((x, y) => (y >= 3 ? [x] + [y] : null));
-console.log(blue);
+//console.log(blue1);
+console.log(blue2)
 
-let blue1 = a.filter((y) => y >= 3).reduce((x, y) => [y] + [x]);
-let blue2 = a.reduce((x, y) => [x] + y);
-console.log(blue1);
-console.log(blue2);
+
+
+let blue4 = a.reduce((prev, next) =>{
+  //[x + y)
+  // console.log(next)
+//return x + y
+if (next >= 3){
+   prev.result.push(next);
+   prev.sum+=next
+   return prev
+}
+ return prev
+ },{ result: [], sum: 0});
+
+ console.log(blue4)
+
+const secondArray = [1, 2, 3].reduce((acc, item) => {
+  acc.push(item >= 2);
+
+  return acc;
+}, []);
+
+
+
+console.log(secondArray); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const basket = [
   { name: "apple", type: "fruit" },
