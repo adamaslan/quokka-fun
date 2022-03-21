@@ -20,4 +20,5 @@ const person = {
     console.log(`Hi! I'm ${this.name[0]}.`);
   },
 };
-console.log(introduceSelf(person));
+console.log(person);
+console.log(person.age);
